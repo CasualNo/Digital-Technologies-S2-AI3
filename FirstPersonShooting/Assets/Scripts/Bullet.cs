@@ -30,7 +30,7 @@ public class Bullet : MonoBehaviour
                 attacked.PlayerTakeDamage(damage);
             }
         }
-        else if (go != null && !go.CompareTag("Enemies") && !go.name.Contains("SpawnArea"))
+        else if (go != null && !go.CompareTag("Enemies") && go.layer != 3)
         {
             killBullet();
         }

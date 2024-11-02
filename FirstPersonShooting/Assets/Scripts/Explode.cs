@@ -41,7 +41,6 @@ public class Explode : MonoBehaviour
             {
                 Vector3 enemyDist = collider.transform.position - transform.position;
                 collider.gameObject.GetComponent<Target>().TakeDamage(damage - (enemyDist.magnitude * falloff));
-                Debug.Log(collider.gameObject.GetComponent<Target>().health);
             } else if (collider.gameObject.name == "Player" && changeName == "Player")
             {
                 collider.gameObject.GetComponent<PlayerHealth>().PlayerTakeDamage(((int)damage));

@@ -10,8 +10,16 @@ public class Chasm : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            other.GetComponent<PlayerHealth>().PlayerTakeDamage(falldamage);
-            other.transform.position = other.GetComponent<PlayerController>().groundpos;
+            PlayerHealth health = other.GetComponent<PlayerHealth>();
+            CharacterController control = other.GetComponent<CharacterController>();
+            PlayerController player = other.GetComponent<PlayerController>();
+            if (health.playerHealth - falldamage > 0)
+            {
+                control.enabled = false;
+                control.transform.position = player.groundpos;
+                control.enabled = true;
+            }
+            health.PlayerTakeDamage(falldamage);
         }
     }
 }

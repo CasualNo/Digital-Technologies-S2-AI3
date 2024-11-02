@@ -41,14 +41,11 @@ public class sword : MonoBehaviour
 
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
-            Debug.Log(hit.transform.name);
-
             Target enemy = hit.transform.GetComponent<Target>();
 
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
-                
             }
         }
     }

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int bombs = 0;
     public int keys = 0;
     int score;
+    public bool hasBK = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +38,10 @@ public class GameManager : MonoBehaviour
         keys += keyIncrement;
         Update();
     }
+
     public void Update()
     {
-        text.text = "Score: " + score.ToString() + "\nBombs: " + bombs.ToString() + "\nKeys: " + keys.ToString();
+        text.text = "Score: " + score.ToString() + "\nBombs: " + bombs.ToString() + "\nKeys: " + keys.ToString() + "\nBoss Key?: ";
+        text.text += hasBK ? "yes" : "no";
     }
 }

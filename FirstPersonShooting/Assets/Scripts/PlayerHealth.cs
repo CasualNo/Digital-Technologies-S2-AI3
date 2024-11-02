@@ -45,6 +45,8 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        Player.enabled = false;
         Player.transform.position = startPos;
+        Player.enabled = true;
     }
 }

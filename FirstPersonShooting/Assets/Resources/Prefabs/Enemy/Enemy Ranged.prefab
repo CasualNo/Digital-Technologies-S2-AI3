@@ -116,9 +116,14 @@ MonoBehaviour:
   spawn: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
   pTarget: 0
+  guaranteed: 0
   maxhealth: 50
   health: 50
-  collectable: {fileID: 2664783008101659646, guid: 893692c375fb85f479efe8727c05c821, type: 3}
+  guaranteedCollectable: {fileID: 0}
+  collectables:
+  - {fileID: 8829804041954686727, guid: 5fbab4f7f95ca3e46915b43753b6c3ab, type: 3}
+  - {fileID: 2664783008101659646, guid: 893692c375fb85f479efe8727c05c821, type: 3}
+  - {fileID: 2749939064322753305, guid: 23f0d69154d4ff34193a4800c5175505, type: 3}
 --- !u!195 &2480110766444546563
 NavMeshAgent:
   m_ObjectHideFlags: 0

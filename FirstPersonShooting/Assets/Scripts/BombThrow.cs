@@ -39,7 +39,6 @@ public class BombThrow : MonoBehaviour
         initrot.eulerAngles = transform.eulerAngles + new Vector3(0f, 0f, -90f);
         GameObject bomb = Instantiate(bombProjec, initpos, initrot);
         bomb.GetComponent<Rigidbody>().velocity = transform.forward * throwSpd;
-        bomb.GetComponent<Rigidbody>().angularVelocity = transform.right * throwSpd;
         bomb.GetComponent<Explode>().ownerName = transform.root.name;
     }
 }

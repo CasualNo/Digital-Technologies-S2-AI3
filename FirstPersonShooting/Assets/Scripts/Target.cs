@@ -9,11 +9,13 @@ public class Target : MonoBehaviour
     public SpawnPointData spawn;
     public Vector3 target;
     [HideInInspector] public bool pTarget;
+    [SerializeField] private bool guaranteed;
 
     public float maxhealth = 50f;
     [HideInInspector] public float health;
-    public GameObject collectable;
+    public GameObject guaranteedCollectable;
     Random drop = new Random();
+    public List<GameObject> collectables = new List<GameObject>();
 
     private void Awake()
     {
@@ -25,9 +27,17 @@ public class Target : MonoBehaviour
 
         if (health <= 0f)
         {
-            if (drop.Next(2) == 0)
+            int rand = drop.Next(collectables.Count + 1);
+            if (guaranteed)
             {
-                Instantiate(collectable, gameObject.transform.position, Quaternion.identity);
+                Quaternion rotation = new Quaternion();
+                rotation.eulerAngles = guaranteedCollectable.transform.rotation.eulerAngles;
+                Instantiate(guaranteedCollectable, gameObject.transform.position, rotation);
+            } else if (rand != collectables.Count)
+            {
+                Quaternion rotation = new Quaternion();
+                rotation.eulerAngles = collectables[rand].transform.rotation.eulerAngles;
+                Instantiate(collectables[rand], gameObject.transform.position, rotation);
             }
             Die();
         }

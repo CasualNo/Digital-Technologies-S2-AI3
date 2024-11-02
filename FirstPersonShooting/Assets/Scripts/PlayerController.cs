@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float gravity = -9.81f;
 
     [HideInInspector] public Vector3 groundpos;
+    private bool mP;
     public Transform ground;
     public float distanceToGround = 0.4f;
     public LayerMask groundMask;
@@ -37,11 +38,26 @@ public class PlayerController : MonoBehaviour
     {
 		if (isGrounded() && velocity.y < 0){
 			velocity.y = -2f;
-            groundpos = transform.position;
-            Debug.Log(groundpos.x + ", " + groundpos.y + ", " + groundpos.z);
+            GroundSet();
 		}
 		velocity.y += gravity * Time.deltaTime;
 		controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void GroundSet()
+    {
+        foreach (Collider col in Physics.OverlapSphere(ground.position, distanceToGround, groundMask))
+        {
+            if (col.gameObject.GetComponent<MovingPlatform>())
+            {
+                mP = true;
+                break;
+            }
+        }
+        if (!mP)
+            groundpos = transform.position;
+        else
+            mP = false;
     }
 
     private bool isGrounded()

@@ -3,80 +3,108 @@
   "WorkspaceRootPath": "E:\\FirstPersonShooting\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\enemyairanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyairanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bombcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|e:\\firstpersonshooting\\assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bombthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombthrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\enemyaimelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyaimelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\explode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\keycollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keycollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\doorcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\doorcollider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\newenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|e:\\firstpersonshooting\\assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\spawnpointdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnpointdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movingplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\healthup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\heart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bombcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bombcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\zeldahealthscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\zeldahealthscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bosskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bosskey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\enemyairanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyairanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\keycollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\keycollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\chasm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\chasm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\enemyaimelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyaimelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|E:\\FirstPersonShooting\\assets\\scripts\\newenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5CAECA-4698-1F00-9426-6AE8820E539E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newenemyai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,8 +114,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 20,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "sword.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\sword.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\sword.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\sword.cs",
+              "RelativeToolTip": "Assets\\Scripts\\sword.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwC8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T10:25:44.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Heart.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\Heart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Heart.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\Heart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Heart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T08:11:05.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BossKey.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\BossKey.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BossKey.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\BossKey.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BossKey.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T07:46:11.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ZeldaHealthScript.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\ZeldaHealthScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ZeldaHealthScript.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\ZeldaHealthScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ZeldaHealthScript.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwBsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T07:25:37.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HealthUp.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\HealthUp.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthUp.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\HealthUp.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAACEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T07:21:48.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Turret.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Turret.cs",
+              "RelativeDocumentMoniker": "Assets\\Turret.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Turret.cs",
+              "RelativeToolTip": "Assets\\Turret.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T08:14:58.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Chasm.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Chasm.cs",
+              "RelativeDocumentMoniker": "Assets\\Chasm.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Chasm.cs",
+              "RelativeToolTip": "Assets\\Chasm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T07:34:21.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
+              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-04T08:02:13.184Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -96,51 +221,51 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Explode.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\Explode.cs",
               "RelativeToolTip": "Assets\\Scripts\\Explode.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAhwC0AAAANAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAApwCoAAABwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T05:13:50.602Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "BombCollection.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\BombCollection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BombCollection.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\BombCollection.cs",
               "RelativeToolTip": "Assets\\Scripts\\BombCollection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T01:23:03.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-11T01:23:03.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "KeyCollection.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\KeyCollection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\KeyCollection.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\KeyCollection.cs",
               "RelativeToolTip": "Assets\\Scripts\\KeyCollection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T01:22:52.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "BombThrow.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\BombThrow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BombThrow.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\BombThrow.cs",
               "RelativeToolTip": "Assets\\Scripts\\BombThrow.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowCoAAABFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T01:14:10.103Z"
+              "WhenOpened": "2024-10-11T01:14:10.103Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "Gun.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\Gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gun.cs",
@@ -152,43 +277,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "Door.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\Door.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Door.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\Door.cs",
               "RelativeToolTip": "Assets\\Scripts\\Door.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T01:40:21.825Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "DoorCollider.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\DoorCollider.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DoorCollider.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\DoorCollider.cs",
               "RelativeToolTip": "Assets\\Scripts\\DoorCollider.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAAEAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAcwD8AAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T01:38:18.222Z"
+              "WhenOpened": "2024-10-10T01:38:18.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "GameManager.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\GameManager.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\GameManager.cs",
               "RelativeToolTip": "Assets\\GameManager.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwCkAAABxAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wCsAAAB2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-10T00:53:42.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "collectable.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\collectable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\collectable.cs",
@@ -200,33 +326,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 21,
               "Title": "Bullet.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAtwCIAAAAZAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAtwB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T04:30:28.259Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T04:30:28.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "EnemyAIRanged.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\EnemyAIRanged.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAIRanged.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\EnemyAIRanged.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyAIRanged.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwBcAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T04:28:09.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T04:28:09.531Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "EnemyAIMelee.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\EnemyAIMelee.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyAIMelee.cs",
@@ -238,55 +362,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowC4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T09:05:53.224Z"
+              "WhenOpened": "2024-10-04T09:05:53.224Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "MovingPlatform.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\MovingPlatform.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovingPlatform.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\MovingPlatform.cs",
               "RelativeToolTip": "Assets\\Scripts\\MovingPlatform.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA4AAAAlAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowA4AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T08:08:07.29Z"
+              "WhenOpened": "2024-10-04T08:08:07.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "SpawnPointData.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\SpawnPointData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SpawnPointData.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\SpawnPointData.cs",
               "RelativeToolTip": "Assets\\Scripts\\SpawnPointData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T08:07:45.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerHealth.cs",
-              "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealth.cs",
-              "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\PlayerHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerHealth.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T08:02:13.184Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "NewEnemyAI.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\NewEnemyAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewEnemyAI.cs",
@@ -304,21 +418,23 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Target.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\Target.cs",
               "RelativeToolTip": "Assets\\Scripts\\Target.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCAAAAAJAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCcAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-13T05:17:30.772Z"
+              "WhenOpened": "2024-09-13T05:17:30.772Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "EnemySpawn.cs",
               "DocumentMoniker": "E:\\FirstPersonShooting\\Assets\\Scripts\\EnemySpawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawn.cs",
               "ToolTip": "E:\\FirstPersonShooting\\Assets\\Scripts\\EnemySpawn.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemySpawn.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAwwEYAAAAjAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T08:36:31.572Z"
+              "WhenOpened": "2024-09-09T08:36:31.572Z",
+              "EditorCaption": ""
             }
           ]
         }

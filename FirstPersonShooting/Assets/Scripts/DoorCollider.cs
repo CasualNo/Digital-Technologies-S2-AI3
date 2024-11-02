@@ -10,6 +10,7 @@ public class DoorCollider : MonoBehaviour
     public float speed = 7;
 
     bool unlock = false;
+    public bool BossDoor = false;
     public TextMeshProUGUI text;
     public bool isLocked = false;
     private CharacterInput controls;
@@ -17,6 +18,7 @@ public class DoorCollider : MonoBehaviour
     private void Awake()
     {
         controls = new CharacterInput();
+        text = GameObject.Find("Prompt (TMP)").GetComponent<TextMeshProUGUI>();
     }
 
     private void OnEnable()
@@ -31,23 +33,33 @@ public class DoorCollider : MonoBehaviour
 
     void Update() 
     {
-        if(controls.Player.Interact.triggered && unlock == true && GameManager.instance.keys > 0)
+        if(unlock && controls.Player.Interact.triggered && !BossDoor && GameManager.instance.keys > 0)
         {
             GameManager.instance.ChangeKeys(-1);
-            isLocked = false;
-            text.text = ("");
-            isUp = false;
+            Unlock();
+        } else if (unlock && controls.Player.Interact.triggered && BossDoor && GameManager.instance.hasBK)
+        {
+            GameManager.instance.hasBK = false;
+            Unlock();
         }
     }
-
+    void Unlock()
+    {
+        isLocked = false;
+        text.text = ("");
+        isUp = false;
+    }
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == ("Player") && isLocked == true)
+        if (other.gameObject.tag == ("Player") && isLocked == true && !BossDoor)
         {
             text.text = ("Open Door?\n(1 Key)");
             unlock = true;
-        }
-        if (other.gameObject.tag == ("Player") && isLocked == false)
+        } else if (other.gameObject.tag == "Player" && isLocked == true)
+        {
+            text.text = ("Open Boss Door?\n(Need Boss Key)");
+            unlock = true;
+        } else if (other.gameObject.tag == ("Player"))
         {
             isUp = false;
         }

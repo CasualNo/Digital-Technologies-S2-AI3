@@ -43,6 +43,4 @@ public class EnemyAIRanged : MonoBehaviour
     {
         canAttack = true;
     }
-
-    
 }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
+using UnityEditor;
 using UnityEngine;
 using Random = System.Random;
 
@@ -10,10 +12,11 @@ public class EnemySpawn : MonoBehaviour
     public GameObject prefab;
     Random rand = new Random();
     [SerializeField] List<GameObject> SpawnPoints;
+    [SerializeField] List<GameObject> Turrets;
     [SerializeField] bool randomised;
+    [SerializeField] bool lockDoors;
+    [SerializeField] List<GameObject> doors; //put door collider triggers here
 
-
-    // Now can make any number of enemies in 1 frame
     void MakeAChild(int totalEnemies)
     {
         for (int i = 0; i < totalEnemies; i++)
@@ -61,14 +64,22 @@ public class EnemySpawn : MonoBehaviour
             {
                 Destroy(transform.GetChild(c).gameObject);
             }
+            foreach (GameObject turret in Turrets)
+            {
+                turret.GetComponent<Turret>().enabled = false;
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.root.CompareTag("Player"))
+        if(other.transform.root.CompareTag("Player") && transform.childCount == 0)
         {
             MakeAChild(numEnemies);
+            foreach (GameObject turret in Turrets)
+            {
+                turret.GetComponent<Turret>().enabled = true;
+            }
         }
     }
 
@@ -76,7 +87,7 @@ public class EnemySpawn : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
-            List<Component> ais = new List<Component>();
+            List<Target> ais = new List<Target>();
             ais.AddRange(GetComponentsInChildren<Target>());
             Vector3 diff = other.transform.position - transform.position;
             if ((diff.x < 15.5 && diff.x > -15.5) && (diff.z < 15.5 && diff.z > -15.5))
@@ -86,6 +97,22 @@ public class EnemySpawn : MonoBehaviour
                     ai.target = other.transform.position;
                     ai.pTarget = true;
                 }
+                if (lockDoors && transform.childCount == 0)
+                {
+                    foreach (GameObject door in doors)
+                    {
+                        door.GetComponent<BoxCollider>().enabled = true;
+                    }
+                    lockDoors = false;
+                } else if (lockDoors)
+                {
+                    foreach (GameObject door in doors)
+                    {
+                        door.GetComponent<BoxCollider>().enabled = false;
+                        door.GetComponent<DoorCollider>().isUp = true;
+                    }
+                }
+
             }
             else
             {
