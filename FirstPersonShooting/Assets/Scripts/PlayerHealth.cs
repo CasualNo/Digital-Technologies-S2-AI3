@@ -7,11 +7,11 @@ public class PlayerHealth : MonoBehaviour
 {
     public float playerHealth = 100;
     [HideInInspector] public float originalPlayerHealth;
-    Random rand = new Random();
     [HideInInspector] public CharacterController Player;
     [HideInInspector] public bool dmgInv = false;
-    [SerializeField] int invTime;
-    Vector3 startPos;
+    [SerializeField] private int invTime;
+    [HideInInspector] public EnemySpawn spawnArea;
+    private Vector3 startPos;
     public Shield shield;
 
     private void Awake()
@@ -43,8 +43,12 @@ public class PlayerHealth : MonoBehaviour
         ZeldaHealthScript.instance.SetCurrentHealth(playerHealth / 5);
     }
 
-    void Die()
+    private void Die()
     {
+        if (spawnArea != null)
+        {
+            spawnArea.OnTriggerExit(gameObject.GetComponent<CharacterController>());
+        }
         Player.enabled = false;
         Player.transform.position = startPos;
         Player.enabled = true;

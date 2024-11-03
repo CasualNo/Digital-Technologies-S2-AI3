@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthUp : MonoBehaviour
 {
-    [SerializeField] private float containerAmt = 2f;
+    [SerializeField] private float containerAmt = 5f;
     void OnTriggerEnter(Collider other)
     {
         if (other.transform.root.CompareTag("Player"))

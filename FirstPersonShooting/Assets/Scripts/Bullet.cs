@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         GameObject go = GameObject.Find(other.transform.name);
         if (go.CompareTag("Player"))
         {
-            killBullet();
+            KillBullet();
             PlayerHealth attacked = Player.GetComponent<PlayerHealth>();
             if (attacked != null && attacked.dmgInv == false)
             {
@@ -32,10 +32,11 @@ public class Bullet : MonoBehaviour
         }
         else if (go != null && !go.CompareTag("Enemies") && go.layer != 3)
         {
-            killBullet();
+            KillBullet();
         }
     }
-    void killBullet()
+
+    void KillBullet()
     {
         Destroy(gameObject);
     }

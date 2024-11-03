@@ -48,27 +48,22 @@ public class EnemyAIMelee : MonoBehaviour
 
     private bool isNextToPlayer()
     {
-        RaycastHit hit;
         Vector3 p1 = transform.position;
         Vector3 pDiff = Player.transform.position - p1;
         // Cast a sphere wrapping character controller 10 meters forward
         // to see if it is about to hit anything.
-        if (Physics.SphereCast(p1, range, pDiff.normalized, out hit, 2))
+        RaycastHit[] hits = Physics.SphereCastAll(p1, 2, pDiff.normalized, range);
+        if (hits.Length != 0)
         {
-            GameObject go = GameObject.Find(hit.transform.name);
-
-            if (go.name == "Player")
+            foreach (RaycastHit hit in hits)
             {
-                return true;
-            }
-            else
-            {
-                return false;
+                GameObject go = GameObject.Find(hit.transform.name);
+                if (go.name == "Player")
+                {
+                    return true;
+                }
             }
         }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 }

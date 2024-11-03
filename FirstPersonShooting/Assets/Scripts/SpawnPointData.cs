@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class SpawnPointData : MonoBehaviour
 {
-    // Data that the spawn point needs to store:
-    // enemy prefab that it spawns
-    // if it respawns
+    // Stores the enemy prefab, if it respawns, and if it is alive
     public GameObject prefab;
     public bool respawn;
     [HideInInspector] public bool alive = true;

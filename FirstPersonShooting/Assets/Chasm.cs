@@ -8,7 +8,7 @@ public class Chasm : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name == "Player")
+        if (other.transform.root.CompareTag("Player"))
         {
             PlayerHealth health = other.GetComponent<PlayerHealth>();
             CharacterController control = other.GetComponent<CharacterController>();

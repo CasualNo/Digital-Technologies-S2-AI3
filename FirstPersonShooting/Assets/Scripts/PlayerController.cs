@@ -36,7 +36,8 @@ public class PlayerController : MonoBehaviour
 
     private void Grav()
     {
-		if (isGrounded() && velocity.y < 0){
+        if (IsGrounded() && velocity.y < 0)
+        {
 			velocity.y = -2f;
             GroundSet();
 		}
@@ -60,21 +61,21 @@ public class PlayerController : MonoBehaviour
             mP = false;
     }
 
-    private bool isGrounded()
-    {            
+    private bool IsGrounded()
+    {
         return Physics.CheckSphere(ground.position, distanceToGround, groundMask);
     }
 
     private void PlayerMovement()
     {
-		move = controls.Player.Movement.ReadValue<Vector2>();
-		Vector3 movement = (move.y * transform.forward) + (move.x * transform.right);
-		controller.Move(movement * moveSpeed * Time.deltaTime);
+        move = controls.Player.Movement.ReadValue<Vector2>();
+        Vector3 movement = (move.y * transform.forward) + (move.x * transform.right);
+        controller.Move(movement * moveSpeed * Time.deltaTime);
     }
 
     private void Jump()
     {
-		if (controls.Player.Jump.triggered && isGrounded()){
+		if (controls.Player.Jump.triggered && IsGrounded()){
 			velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
 		}
     }

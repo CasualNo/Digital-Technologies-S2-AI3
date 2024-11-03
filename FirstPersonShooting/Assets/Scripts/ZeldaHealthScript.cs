@@ -51,13 +51,13 @@ public class ZeldaHealthScript : MonoBehaviour
         totalHearts = heartsIn; // sets the total hearts to the value given to the void
         currentHearts = (float)totalHearts; //Sets health to full, casting total hearts as a float
 
-        for(int i = 0; i < totalHearts; i++) //Creates all the hearts
+        for (int i = 0; i < totalHearts; i++) //Creates all the hearts
         {
             GameObject newHeart = Instantiate(heartContainerPrefab, transform); //Makes a new heart
             heartContainers.Add(newHeart); //Adds heart to list
 
             //Making our single link list (I have no idea what this does, I'm just going with it)
-            if(currentContainer != null)
+            if (currentContainer != null)
             {
                 currentContainer.next = newHeart.GetComponent<HeartContainer>();
             }
@@ -66,7 +66,7 @@ public class ZeldaHealthScript : MonoBehaviour
         currentContainer = heartContainers[0].GetComponent<HeartContainer>(); //Makes the last heart the first one in our list
     }
 
-    public void SetCurrentHealth(float health) //This is for setting the player health to a specific value. We may delete this at some point
+    public void SetCurrentHealth(float health) //This is for setting the player health to a specific value.
     {
         currentHearts = health;
         currentContainer.SetHeart(currentHearts);
@@ -79,7 +79,7 @@ public class ZeldaHealthScript : MonoBehaviour
         heartContainers.Add(newHeart);
 
         //I still don't understand this bit
-        if(currentContainer != null)
+        if (currentContainer != null)
         {
             currentContainer.next = newHeart.GetComponent<HeartContainer>();
         }

@@ -20,7 +20,7 @@ public class Explode : MonoBehaviour
     //I think i'll leave it that enemies can blow up walls, that's a cool feature
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name.Contains(changeName)|| collision.gameObject.CompareTag("FakeWall"))
+        if (collision.gameObject.name.Contains(changeName) || collision.gameObject.CompareTag("FakeWall"))
         {
             Blast();
         }

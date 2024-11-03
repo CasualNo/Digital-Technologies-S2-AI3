@@ -27,9 +27,7 @@ public class sword : MonoBehaviour
     void Update()
     {
         if (controls.Player.Shoot.triggered)
-        {
             slash();
-        }
     }
 
     void slash()
@@ -37,17 +35,10 @@ public class sword : MonoBehaviour
 
         //animation trigger here
 
-        RaycastHit hit;
-
-        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out RaycastHit hit, range))
         {
-            Target enemy = hit.transform.GetComponent<Target>();
-
-            if (enemy != null)
-            {
+            if (hit.transform.TryGetComponent(out Target enemy))
                 enemy.TakeDamage(damage);
-            }
         }
     }
-  
 }

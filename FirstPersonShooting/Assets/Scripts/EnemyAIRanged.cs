@@ -26,19 +26,21 @@ public class EnemyAIRanged : MonoBehaviour
     void Update()
     {
         agent.SetDestination(self.target);
-        if (canAttack == true && self.pTarget == true)
+        if (canAttack && self.pTarget)
         {
             spawnBullet();
             canAttack = false;
             Invoke("ResetAttack", 2f);
         }
     }
+
     void spawnBullet()
     {
         var bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
         Vector3 pDiff = Player.position - transform.position;
         bullet.GetComponent<Rigidbody>().velocity = pDiff.normalized * bulletSpeed;
     }
+
     void ResetAttack()
     {
         canAttack = true;

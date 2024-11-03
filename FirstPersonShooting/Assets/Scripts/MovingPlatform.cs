@@ -9,20 +9,18 @@ public class MovingPlatform : MonoBehaviour
     public Vector3 finalpos;
     public float movespeed = 3f;
     private bool fwd = true;
-    // Start is called before the first frame update
+    
     void Start()
     {
         initpos = transform.position;
     }
-    
 
-    // Update is called once per frame
     void Update()
     {
-        if ((transform.position == initpos + finalpos && fwd == true) || (transform.position == initpos && fwd == false))
+        if ((transform.position == initpos + finalpos && fwd) || (transform.position == initpos && !fwd))
         {
             fwd = !fwd;
-        } else if (fwd == true)
+        } else if (fwd)
         {
             transform.position = Vector3.MoveTowards(transform.position, initpos + finalpos, movespeed * Time.deltaTime);
         } else
@@ -36,7 +34,7 @@ public class MovingPlatform : MonoBehaviour
         if (other.transform.root.CompareTag("Player"))
         {
             CharacterController player = other.GetComponent<CharacterController>();
-            if (fwd == true && transform.position != initpos + finalpos && transform.position != initpos)
+            if (fwd && transform.position != initpos + finalpos && transform.position != initpos)
             {
                 player.Move(finalpos.normalized * movespeed * Time.deltaTime);
             }

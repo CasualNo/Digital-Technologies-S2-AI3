@@ -17,7 +17,7 @@ public class Turret : MonoBehaviour
 
     void Update()
     {
-        if (canAttack == true)
+        if (canAttack)
         {
             spawnBullet();
             canAttack = false;
@@ -26,7 +26,7 @@ public class Turret : MonoBehaviour
     }
     void spawnBullet()
     {
-        var bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
         bullet.GetComponent<Rigidbody>().velocity = transform.forward * bulletSpeed;
     }
     void ResetAttack()

@@ -15,12 +15,13 @@ public class Target : MonoBehaviour
     [HideInInspector] public float health;
     public GameObject guaranteedCollectable;
     Random drop = new Random();
-    public List<GameObject> collectables = new List<GameObject>();
+    public List<GameObject> collectables = new();
 
     private void Awake()
     {
         health = maxhealth;
     }
+
     public void TakeDamage(float amount)
     {
         health -= amount;
@@ -30,19 +31,24 @@ public class Target : MonoBehaviour
             int rand = drop.Next(collectables.Count + 1);
             if (guaranteed)
             {
-                Quaternion rotation = new Quaternion();
-                rotation.eulerAngles = guaranteedCollectable.transform.rotation.eulerAngles;
-                Instantiate(guaranteedCollectable, gameObject.transform.position, rotation);
+                Quaternion rotation = new()
+                {
+                    eulerAngles = guaranteedCollectable.transform.rotation.eulerAngles
+                };
+                _ = Instantiate(guaranteedCollectable, transform.position, rotation);
             } else if (rand != collectables.Count)
             {
-                Quaternion rotation = new Quaternion();
-                rotation.eulerAngles = collectables[rand].transform.rotation.eulerAngles;
-                Instantiate(collectables[rand], gameObject.transform.position, rotation);
+                Quaternion rotation = new()
+                {
+                    eulerAngles = collectables[rand].transform.rotation.eulerAngles
+                };
+                _ = Instantiate(collectables[rand], transform.position, rotation);
             }
             Die();
         }
     }
-    void Die()
+
+    private void Die()
     {
         if (spawn != null)
         {

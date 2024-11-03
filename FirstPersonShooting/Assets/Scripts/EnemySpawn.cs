@@ -14,6 +14,7 @@ public class EnemySpawn : MonoBehaviour
     [SerializeField] List<GameObject> SpawnPoints;
     [SerializeField] List<GameObject> Turrets;
     [SerializeField] bool randomised;
+    [SerializeField] bool boss;
     [SerializeField] bool lockDoors;
     [SerializeField] List<GameObject> doors; //put door collider triggers here
 
@@ -24,38 +25,34 @@ public class EnemySpawn : MonoBehaviour
             Transform SpawnLocation;
             SpawnPointData SpawnObj;
 
-            if (SpawnPoints.Count > 0 && randomised == true)
+            if (SpawnPoints.Count > 0 && randomised)
             {
                 SpawnLocation = SpawnPoints[rand.Next(SpawnPoints.Count)].transform;
-            } else if (SpawnPoints.Count > 0 && i <= SpawnPoints.Count-1)
+            } else if (SpawnPoints.Count > 0 && i <= SpawnPoints.Count - 1)
             {
                 SpawnLocation = SpawnPoints[i].transform;
-            }
-            else
+            } else
             {
                 SpawnLocation = transform;
             }
-            SpawnObj = SpawnLocation.gameObject.GetComponent<SpawnPointData>();
-            if (SpawnObj != null)
+            if (SpawnLocation.gameObject.TryGetComponent(out SpawnObj))
             {
-                if (SpawnObj.respawn == true || SpawnObj.alive == true)
+                if (SpawnObj.respawn || SpawnObj.alive)
                 {
-                    GameObject newChild = Instantiate(SpawnObj.prefab, SpawnLocation.position, Quaternion.identity) as GameObject;
+                    GameObject newChild = Instantiate(SpawnObj.prefab, SpawnLocation.position, Quaternion.identity, transform);
                     Target enemy = newChild.GetComponent<Target>();
                     //stores enemy's spawn point's data in the enemy
                     enemy.spawn = SpawnObj;
                     enemy.target = SpawnLocation.position + new Vector3(0.001f, 0, 0);
-                    //Make the child's parent the spawn area
-                    newChild.transform.parent = transform;
                 }
             } else if (SpawnLocation == transform)
             {
-                GameObject newChild = Instantiate(prefab, SpawnLocation.position, Quaternion.identity) as GameObject;
+                GameObject newChild = Instantiate(prefab, SpawnLocation.position, Quaternion.identity);
                 newChild.transform.parent = transform;
             }
         }
     }
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         //When Player exits trigger, kills all children
         if (other.transform.root.CompareTag("Player"))
@@ -73,7 +70,7 @@ public class EnemySpawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.transform.root.CompareTag("Player") && transform.childCount == 0)
+        if (other.transform.root.CompareTag("Player") && transform.childCount == 0)
         {
             MakeAChild(numEnemies);
             foreach (GameObject turret in Turrets)
@@ -87,11 +84,12 @@ public class EnemySpawn : MonoBehaviour
     {
         if (other.transform.root.CompareTag("Player"))
         {
-            List<Target> ais = new List<Target>();
+            List<Target> ais = new();
             ais.AddRange(GetComponentsInChildren<Target>());
             Vector3 diff = other.transform.position - transform.position;
-            if ((diff.x < 15.5 && diff.x > -15.5) && (diff.z < 15.5 && diff.z > -15.5))
+            if ((!boss && diff.x < 15.5 && diff.x > -15.5 && diff.z < 15.5 && diff.z > -15.5) || (boss && diff.x < 30.5 && diff.x > -30.5 && diff.z < 30.5 && diff.z > -30.5))
             {
+                other.GetComponent<PlayerHealth>().spawnArea = this;
                 foreach (Target ai in ais)
                 {
                     ai.target = other.transform.position;
